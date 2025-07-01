@@ -6,14 +6,13 @@ version = "0.0"
 requires-python = "~=3.8"
 
 dependencies = [
-  "ops",
   "pyyaml",
-  "lightkube>=0.11",  # observability_libs
-  "lightkube-models",  # observability_libs
+  "lightkube>=0.11", # observability_libs
+  "lightkube-models", # observability_libs
   "jsonschema", # traefik_k8s, tls_certificates
-  "cryptography",  # tls_certificates
-  "pydantic>=2",  # traefik_k8s.v2.ingress
-  "opentelemetry-exporter-otlp-proto-http>=1.21.0",  # tracing
+  "cryptography", # tls_certificates
+  "pydantic>=2", # traefik_k8s.v2.ingress
+  "opentelemetry-exporter-otlp-proto-http>=1.21.0", # tracing
   "tenacity",
   "cosl",
 ]
@@ -31,7 +30,6 @@ dev = [
   "deepdiff",
   "hypothesis",
   "validators>=0.21.2",
-  "ops[testing]",
   "pytest-interface-tester>0.3",
   # Integration
   "juju<=3.3.0,>=3.0",
